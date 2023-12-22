@@ -2,7 +2,61 @@
     margin: 0;
 }
 
+/*Estructura de la pagina*/
 #cuerpo {
     display: grid;
+    grid-template-columns: 6fr 2fr;
+    grid-template-rows: 1fr 7fr 1fr;
+}
 
+/*Header de la pagina*/
+header {
+    display: flex;
+    border: solid black;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    justify-content: space-between;
+}
+
+#menuGeneral {
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+
+#menuGeneral input {
+    width: 50%;
+    height: 50%;
+    border-radius: 25px;
+    border: solid black 1px;
+    padding-left: 3%;
+}
+
+#menu {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#logo img {
+    height: 100px;
+    width: 100px;
+}
+
+/*Cuerpo de la pagina*/
+section {
+    border: solid black;
+}
+
+#publicaciones {
+    height: auto;
+    min-height: 75vh;
+}
+
+/*Footer de la pagina*/
+footer {
+    border: solid black;
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
