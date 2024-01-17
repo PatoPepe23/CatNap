@@ -2,61 +2,152 @@
     margin: 0;
 }
 
-/*Estructura de la pagina*/
 #cuerpo {
     display: grid;
-    grid-template-columns: 6fr 2fr;
-    grid-template-rows: 1fr 7fr 1fr;
+    min-height: 100vh;
+    grid-template-columns: 4fr 2fr;
+    grid-template-rows: 120px 8fr 120px;
 }
 
-/*Header de la pagina*/
+
+/*Header*/
+
 header {
     display: flex;
-    border: solid black;
-    grid-column-start: 1;
-    grid-column-end: 4;
     justify-content: space-between;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    background-color: bisque;
+    position: sticky;
+    top: 0;
 }
 
-#menuGeneral {
+#logo {
     display: flex;
-    align-items: center;
-    width: 40%;
-}
-
-#menuGeneral input {
+    justify-content: center;
     width: 50%;
-    height: 50%;
-    border-radius: 25px;
-    border: solid black 1px;
-    padding-left: 3%;
-}
-
-#menu {
-    display: flex;
-    width: 50%;
-    align-items: center;
-    justify-content: space-around;
+    border: solid black;
 }
 
 #logo img {
-    height: 100px;
-    width: 100px;
+    height: 10vh;
+    width: auto;
 }
 
-/*Cuerpo de la pagina*/
-section {
+#logBus {
+    display: flex;
+    width: 50%;
+    justify-content: end;
+    align-items: center;
     border: solid black;
+}
+
+#logIn {
+    display: flex;
+    width: 15vw;
+    justify-content: space-around;
+    align-items: center;
+    border: solid black;
+}
+
+#logIn a img {
+    height: 5vh;
+    width: auto;
+    border-radius: 25px;
+}
+
+#buscador {
+    display: flex;
+}
+
+#buscador input {
+    height: 5vh;
+    width: 25vw;
+    border-radius: 20px 0 0 20px;
+    border: none;
+}
+
+#buscador .buscar {
+    border-radius: 0 20px 20px 0;
+    border: none;
+    margin-right: 10%;
+}
+
+
+/*Cuerpo*/
+
+#filtro {
+    background-color: blue;
+    height: 103%;
 }
 
 #publicaciones {
+    display: flex;
+    background-color: blueviolet;
+    min-height: 103%;
     height: auto;
-    min-height: 75vh;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
 }
 
-/*Footer de la pagina*/
-footer {
+/*publis*/
+
+.publicacion {
+    display: grid;
+    grid-template-rows: 50px 40px 4fr;
     border: solid black;
+    width: 30vw;
+    height: auto;
+    max-height: 70ch;
+    margin: 3%;
+}
+
+
+.cuerpoPubli {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cuerpoPubli img{
+    max-width: 50%;
+    justify-self: center;
+}
+
+.publiHeader img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+}
+
+.publiHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.likes {
+    display: flex;
+    align-items: center;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+
+/*Footer*/
+
+footer {
+    background-color: aqua;
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 6;
+    position: fixed;
+    top: 90vh;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
 }
