@@ -5,7 +5,7 @@
 #cuerpo {
     display: grid;
     min-height: 100vh;
-    grid-template-columns: 6fr 2fr;
+    grid-template-columns: 8fr 2fr;
     grid-template-rows: 120px 100% 120px;
 }
 
@@ -184,26 +184,31 @@ header {
     position: fixed;
     top: 0;
     right: 0;
-    width: 25vw;
+    width: 20vw;
 }
 
 #menus {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-left: 2vw;
-    height: 30vh;
+    height: 50vh;
 }
 
 #filtro a {
+    font-size: 3vh;
     display: flex;
-    height: 5vh;
-    width: 15vw;
-    border-radius: 50px;
+    height: 6vh;
+    width: 11vw;
+    border-radius: 25px;
     align-items: center;
     padding-left: 2vw;
     text-decoration: dashed;
     color: white;
+}
+
+#filtro i {
+    padding-right: 2vw;
 }
 
 #filtro a:hover {
